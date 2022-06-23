@@ -13,7 +13,7 @@ import { HomePageComponent } from './components/pages/home-page/home-page.compon
 import { ProductsPageComponent } from './components/pages/products-page/products-page.component';
 import { ProductListComponent } from './components/pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './components/pages/products-page/product-list/product-card/product-card.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,10 @@ import { ProductCardComponent } from './components/pages/products-page/product-l
      ReactiveFormsModule,
    
      BrowserAnimationsModule,
+
+     MatCardModule
+
+    
      
   ],
   providers: [],
