@@ -10,9 +10,9 @@ justify-content: space-between;
 }
 
 #navbar{
-
-    flex: 1 1 auto;
-
+    flex:1 1 end;
+    display : flex;
+    justify-content: space-evenly;
 }
 #logo{
 padding-top: 30px;
@@ -21,6 +21,10 @@ border-radius: 50%;
 
 }
 
+
+.spacer{
+    flex: 1 1 auto;
+  }
 
 
 
