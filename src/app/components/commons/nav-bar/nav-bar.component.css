@@ -11,9 +11,16 @@ justify-content: space-between;
 
 #navbar{
 
-display: flex;
-justify-content: space-between;
+    flex: 1 1 auto;
 
 }
+#logo{
+padding-top: 30px;
+width: 80px;
+border-radius: 50%;
+
+}
+
+
 
 

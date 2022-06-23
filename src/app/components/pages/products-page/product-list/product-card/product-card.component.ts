@@ -5,6 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.css']
 })
+
 export class ProductCardComponent implements OnInit {
 @Input()
 films: any[]= []
@@ -13,6 +14,7 @@ albums: any[] = []
 @Input()
   produit: any;
 
+IMG_DEFAULT =  "https://img.freepik.com/vecteurs-libre/astronaute-mignon-flottant-ballon-planete-dans-illustration-icone-vecteur-dessin-anime-espace-concept-icone-science-technologie-isole-vecteur-premium-style-dessin-anime-plat_138676-3850.jpg?t=st=1656013798~exp=1656014398~hmac=e7287bffc21b438e4024cd62b5acbfe8db86a631074842358cf618d9698c4428&w=826" ;
 
   constructor() { }
 

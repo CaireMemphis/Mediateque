@@ -14,6 +14,7 @@ import { ProductsPageComponent } from './components/pages/products-page/products
 import { ProductListComponent } from './components/pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './components/pages/products-page/product-list/product-card/product-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {MatCardModule} from '@angular/material/card';
    
      BrowserAnimationsModule,
 
-     MatCardModule
+     MatCardModule,
+     MatToolbarModule
 
     
      
