@@ -1,0 +1,10 @@
+#footerStyle{
+background-color: aquamarine;
+color: goldenrod;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-self: center end;
+justify-self: center end;
+}
