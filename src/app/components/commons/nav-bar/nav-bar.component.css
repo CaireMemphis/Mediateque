@@ -1,0 +1,19 @@
+
+#headerbar{
+background-color: darkgray;
+height: 50px;
+display: grid;
+grid-area:  1fr 1fr/1fr;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+#navbar{
+
+display: flex;
+justify-content: space-between;
+
+}
+
+

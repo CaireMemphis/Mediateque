@@ -12,6 +12,7 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { ProductsPageComponent } from './components/pages/products-page/products-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
