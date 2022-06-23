@@ -10,6 +10,9 @@ export class ProductCardComponent implements OnInit {
 films: any[]= []
 albums: any[] = []
 
+@Input()
+  produit: any;
+
 
   constructor() { }
 

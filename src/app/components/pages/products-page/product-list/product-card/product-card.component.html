@@ -1,27 +1,26 @@
 
 <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-<div class="card" style="width: 18rem;"> 
-     
-      <div class="card-body">  
-        <h4 class="card-title"> {{product.nom | slice:0:10}} 
-<span *ngIf="product.nom.length >10">...</span>
-
-        </h4>
-        <h5 *ngIf="product.artiste">
-{{product.artiste}}
-        </h5>
-        <h5 *ngIf="product.real">
-            {{product.real}}
-                    </h5>
-        <img src="" alt="" *ngIf="!product.img" width="150px">
-        <img src="product.ing" alt="" width="150px">
-
-         <p class="card-text"> {{product.synopsis | }} </p>
-           
-         <a href="#" class="btn btn-primary">Go somewhere</a> 
-         </div> 
-        </div>
-
-
+<mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> {{produit.nom | slice:0:10}}
+          <span *ngIf="produit.nom.length > 10">
+            ...
+          </span>
+        </mat-card-title>
+        <h5 *ngIf="produit.artiste">{{produit.artiste}}</h5>
+        </mat-card-header>
+        <span *ngIf="produit.img != ''">
+          <img mat-card-image src="{{produit.img}}" alt="Photo">
+        </span>
+        <span *ngIf="!produit.img">
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo">
+        </span>
+        <mat-card-content>
+          <p>
+            {{produit.synopsis}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>DETAILS</button>
+        </mat-card-actions>
+      </mat-card>
