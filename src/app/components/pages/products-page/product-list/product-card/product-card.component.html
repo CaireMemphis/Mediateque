@@ -10,7 +10,7 @@
         <h5 *ngIf="produit.artiste">{{produit.artiste}}</h5>
         </mat-card-header>
         <span *ngIf="produit.img != ''">
-          <img class="afficheFilm" mat-card-image [src]="produit.img" alt="Photo">
+          <img class="afficheFilm" [src]="produit.img" alt="Photo">
         </span>
         <span *ngIf="!produit.img">
           <img mat-card-image [src] ="IMG_DEFAULT"alt="Photo">
