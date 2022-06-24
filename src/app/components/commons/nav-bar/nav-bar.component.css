@@ -14,16 +14,16 @@ position: fixed;
 }
 
 .button_header{
-    color: rgb(255, 255, 255); font-size: 29px; line-height: 29px; padding: 11px; border-radius: 12px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 30%, rgb(20, 78, 117) 100%); box-shadow: rgba(0, 0, 0, 0.64) 6px 7px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+    color: rgb(255, 255, 255); font-size: 29px; line-height: 29px; padding: 11px; border-radius: 12px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(127, 101, 219) 0%, rgb(104, 74, 214) 30%, rgb(83, 47, 216) 100%); box-shadow: rgba(0, 0, 0, 0.64) 6px 7px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
 margin: 10px;
 
 }
 .button_header:hover{
-background: #1C6EA4;
+background: rgb(43, 1, 197);
 
 }
 .button_header:active{
- background: #144E75;
+    background: rgb(43, 1, 197);
 
 }
 
