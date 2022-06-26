@@ -4,6 +4,7 @@ Ce projet a été créer sous [Angular CLI](https://github.com/angular/angular-c
 
 Il reprend l'idée d'un site web possédant une page d'acceuil, une page présentant les différents produits d'une catalogue et une page détaillant un produit en particulier. Si un url  autre que `home`, `product` et `detail` est renseigné sur le `http://localhost:4200/`, il renvoie sur une page d'erreur.
 
+Les données sont contenus dans un fichier json, prenant la place d'une base de données et sont récupérées par des services.
 
 
 # Avant utilisation
