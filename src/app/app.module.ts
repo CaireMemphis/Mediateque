@@ -4,6 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/commons/nav-bar/nav-bar.component';
@@ -15,6 +18,9 @@ import { ProductListComponent } from './components/pages/products-page/product-l
 import { ProductCardComponent } from './components/pages/products-page/product-list/product-card/product-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { ProductPageComponent } from './components/pages/product-page/product-page.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +31,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HomePageComponent,
     ProductsPageComponent,
     ProductListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductPageComponent
   ],
   imports: [
   
@@ -40,7 +47,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
      BrowserAnimationsModule,
 
      MatCardModule,
-     MatToolbarModule
+     MatToolbarModule,
+     HttpClientModule
 
     
      

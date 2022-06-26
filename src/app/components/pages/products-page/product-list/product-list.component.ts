@@ -1,21 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { Film } from 'src/app/components/models/film.model';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
-
-@Input()
+  @Input()
   products: any[] = [];
+  @Input()
+  type:string="rien";
 
 
-
-  constructor() { }
+  constructor() {
+    //alert(this.products instanceof Film);
+   }
 
   ngOnInit(): void {
   }
-
 }
