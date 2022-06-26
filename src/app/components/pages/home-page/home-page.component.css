@@ -1,0 +1,46 @@
+#bodyHome{
+
+width: 100%;
+margin-top: 150px;
+}
+
+#bodyHome h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#bodyHomeImg{
+
+ position: relative;
+
+text-align: center;
+
+}
+
+#bodyHomeImg h4{
+
+font-size: xx-large;
+font-weight: bolder;
+
+}
+
+
+.blocExp{
+font-size: larger;
+margin: 100px;
+padding: 100px;
+background-color: gray;
+color: beige;
+border-radius: 15%;
+
+
+
+
+}
+
+.spacer{
+
+padding: 50px;
+
+}
+

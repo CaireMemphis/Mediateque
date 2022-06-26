@@ -1,27 +1,27 @@
 # Mediateque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+Ce projet a été créer sous [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2 et est un petit projet d'évaluation du modula Angular de ma formation.
 
-## Development server
+Il reprend l'idée d'un site web possédant une page d'acceuil, une page présentant les différents produits d'une catalogue et une page détaillant un produit en particulier. Si un url  autre que `home`, `product` et `detail` est renseigné sur le `http://localhost:4200/`, il renvoie sur une page d'erreur.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Les données sont contenus dans un fichier json, prenant la place d'une base de données et sont récupérées par des services.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Avant utilisation
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Avant toute chose, une fois que vous avez cloner le projet, il faut effectuer plusieurs installations dans le terminal de commande:
 
-## Running unit tests
+- `npm i` ou `npm install` pour installer les nodes modules nécessaires
+- `npm i @angular/material` pour installer les éléments nécessaires à l'affichage
+- `npm i json-server` pour les données nécessaires à l'utilisations de services
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Déploiement des serveurs
 
-## Running end-to-end tests
+Afin de lancer le visuel du programme en mode developpement, il faut faire dans un terminal de commande :
+ `ng serve -o`, qui ouvre une page web sur l'url : `http://localhost:4200/`.
+ 
+  Le `-o` permet de ne pas avoir à recharger manuellement la page, elle le fait d'elle-même. Pour fermer le serveur, il suffit d'effectuer un `CTRL+C` dans l'invite de commande.
+#
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

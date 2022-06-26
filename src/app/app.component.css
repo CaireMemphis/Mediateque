@@ -1,0 +1,32 @@
+#footer{
+
+    position:absolute;
+
+    bottom:0;
+    
+    width:100%;
+    
+    padding-top:50px;
+    
+    height:50px;
+
+}
+#header{
+
+    position:absolute;
+
+    top:0;
+    
+    width:100%;
+    
+    padding-bottom:50px;
+    
+
+}
+.espace{
+
+margin-bottom: 70px;
+
+}
+
+

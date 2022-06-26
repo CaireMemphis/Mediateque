@@ -1,0 +1,28 @@
+
+
+<mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> {{produit.nom | slice:0:10}}
+          <span *ngIf="produit.nom.length > 10">
+            ...
+          </span>
+        </mat-card-title>
+        <h5 *ngIf="produit.artiste">{{produit.artiste}}</h5>
+        </mat-card-header>
+        <span *ngIf="produit.img != ''">
+          <img class="afficheFilm" [src]="produit.img" alt="Photo">
+        </span>
+        <span *ngIf="!produit.img">
+          <img mat-card-image [src] ="IMG_DEFAULT"alt="Photo">
+        </span>
+        <mat-card-content>
+          <p *ngIf="produit.synopsis">
+            {{produit.synopsis | slice:0:120}}<span *ngIf="produit.synopsis.length > 120">
+              ...
+            </span>
+          </p> 
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="buttonCard" routerLink="/product/{{typeProduct}}/{{produit.id}}" mat-button>DETAILS</button>
+        </mat-card-actions>
+      </mat-card>

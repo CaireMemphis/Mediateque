@@ -1,0 +1,39 @@
+.example-card {
+    max-width: 250px;
+    height: 550px;
+  }
+  mat-card-title{
+    padding: 15px;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+.afficheFilm{
+
+max-height: 300px;
+width: 100%;
+
+}
+.buttonCard{
+  color: rgb(191, 211, 80);
+   line-height: 29px;
+    padding: 11px;
+     border-radius: 12px;
+      font-family: Georgia, serif;
+       font-weight: normal; 
+       text-decoration: none;
+        font-style: normal;
+         font-variant: normal;
+          text-transform: none;
+           background-image: linear-gradient(to right, rgb(127, 101, 219) 0%, rgb(104, 74, 214) 30%, rgb(83, 47, 216) 100%); box-shadow: rgba(0, 0, 0, 0.64) 6px 7px 15px 5px;
+            border: 2px solid rgb(28, 110, 164);
+             display: inline-block;
+  margin: 10px;
+}
+.buttonCard:hover{
+  background: rgb(43, 1, 197);
+}
+.buttonCard:active{
+  background: rgb(43, 1, 197);
+}

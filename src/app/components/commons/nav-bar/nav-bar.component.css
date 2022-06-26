@@ -1,0 +1,55 @@
+
+#headerbar{
+background-color: darkgray;
+height: 70px;
+display: grid;
+grid-area:  1fr 1fr/1fr;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+    width: 100%;
+    border-spacing: 5px;
+    top: 0;
+    z-index: 2;
+}
+
+.button_header{
+    color: rgb(255, 255, 255); font-size: 29px; line-height: 29px; padding: 11px; border-radius: 12px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(127, 101, 219) 0%, rgb(104, 74, 214) 30%, rgb(83, 47, 216) 100%); box-shadow: rgba(0, 0, 0, 0.64) 6px 7px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+margin: 10px;
+
+}
+.button_header:hover{
+background: rgb(43, 1, 197);
+
+}
+.button_header:active{
+    background: rgb(43, 1, 197);
+
+}
+
+
+#navbar{
+    flex:1 1 end;
+    display : flex;
+    justify-content: space-evenly;
+}
+
+
+#logo{
+    background-color: rgb(127, 101, 219);
+padding-top: 30px;
+width: 80px;
+border-radius: 50%;
+-webkit-box-shadow: 6px 7px 15px 5px rgba(0,0,0,0.64); 
+box-shadow: 6px 7px 15px 5px rgba(0,0,0,0.64);
+border: 3px solid #1C6EA4;
+}
+
+
+.spacer{
+    flex: 1 1 auto;
+  }
+
+
+
