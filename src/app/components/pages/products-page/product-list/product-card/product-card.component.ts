@@ -21,6 +21,8 @@ IMG_DEFAULT : string =  "https://img.freepik.com/vecteurs-libre/astronaute-migno
 constructor() { }
 
 ngOnInit(): void {
+
+  console.log(this.produit)
 }
 
 

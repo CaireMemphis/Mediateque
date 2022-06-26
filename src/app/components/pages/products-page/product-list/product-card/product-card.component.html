@@ -16,13 +16,13 @@
           <img mat-card-image [src] ="IMG_DEFAULT"alt="Photo">
         </span>
         <mat-card-content>
-          <p>
+          <p *ngIf="produit.synopsis">
             {{produit.synopsis | slice:0:120}}<span *ngIf="produit.synopsis.length > 120">
               ...
             </span>
           </p> 
         </mat-card-content>
         <mat-card-actions>
-          <a  routerLink="/product/{{typeProduct}}/{{produit.id}}" mat-button>DETAILS</a>
+          <button class="buttonCard" routerLink="/product/{{typeProduct}}/{{produit.id}}" mat-button>DETAILS</button>
         </mat-card-actions>
       </mat-card>

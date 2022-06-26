@@ -1,15 +1,20 @@
+
+<section class="detail">
 <div class="" id="about">
-    <div class="">
+    <div class="imgs">
      <img *ngIf="data.img != ''" src={{data.img}} class=" " alt="Table Setting" width="600" height="750">
      <img *ngIf="!data.img" mat-card-image src="https://img.freepik.com/vecteurs-libre/astronaute-mignon-flottant-ballon-planete-dans-illustration-icone-vecteur-dessin-anime-espace-concept-icone-science-technologie-isole-vecteur-premium-style-dessin-anime-plat_138676-3850.jpg?t=st=1656013798~exp=1656014398~hmac=e7287bffc21b438e4024cd62b5acbfe8db86a631074842358cf618d9698c4428&w=826" alt="Photo">
 
     </div>
 
-    <div class="w3-col m6 w3-padding-large">
+    <div class="explains">
       <h1 class="w3-center">{{data.nom}}</h1><br>
+
       <h3 class="w3-center" *ngIf="!data.artiste" >{{data.real}} {{data.annee}}</h3>
+
       <h3 class="w3-center" *ngIf="!data.real" >{{data.artiste}} {{data.annee}}</h3>
       <p  *ngIf="data.synopsis != ''" class="w3-large"> {{data.synopsis}} </p>
       <p class="w3-large w3-text-grey w3-hide-medium">{{data.details}} </p>
     </div>
   </div>
+</section>

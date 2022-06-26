@@ -1,7 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
-    
-    
-    letter-spacing: 5px;
+
+
   }
 
   img{
@@ -13,8 +12,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   #about{
     margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-area: 1fr/1fr 1fr;
   }
+
+.imgs{width: 100%;}
+
+.explains{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.detail {
+padding-left: 300px;
+padding-right: 300px;
+
+}
   
