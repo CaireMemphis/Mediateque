@@ -18,7 +18,12 @@ export class ProductPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    if(this.route.snapshot.paramMap.get('type') == "Film"){
+
+   /* Vérifier si le type de produit est un film. Si c'est le cas, il obtiendra l'identifiant du
+   produit, puis il obtiendra les données du produit. */
+
+  
+   if(this.route.snapshot.paramMap.get('type') == "Film"){
       const id= this.route.snapshot.paramMap.get('id');
        
       if(id){
@@ -26,6 +31,7 @@ export class ProductPageComponent implements OnInit {
       }
         
     }
+    /* Obtenir l'identifiant du produit, puis obtenir les données du produit. */
     else{
       const id= this.route.snapshot.paramMap.get('id');
        

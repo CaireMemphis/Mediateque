@@ -22,6 +22,7 @@ import { ProductPageComponent } from './components/pages/product-page/product-pa
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { ProductPageComponent } from './components/pages/product-page/product-pa
     ProductListComponent,
     ProductCardComponent,
     ProductPageComponent
+   
   ],
   imports: [
   

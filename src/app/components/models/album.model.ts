@@ -8,3 +8,4 @@ export class Album{
         public details: string
     ){}
 }
+export interface AlbumI {id: number,nom:string,artiste: string, annee: number, img: string, details:string}
