@@ -19,6 +19,8 @@ Avant toute chose, une fois que vous avez cloner le projet, il faut effectuer pl
 
 ## Déploiement des serveurs
 
+Pour pouvoir récupérer les éléments contenu dnas le fichier json, il faut lancer le serveur json avec cette commande : `npm run start:db` .
+
 Afin de lancer le visuel du programme en mode developpement, il faut faire dans un terminal de commande :
  `ng serve -o`, qui ouvre une page web sur l'url : `http://localhost:4200/`.
  
