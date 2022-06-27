@@ -18,6 +18,8 @@ Avant toute chose, une fois que vous avez cloner le projet, il faut effectuer pl
 - `npm i json-server` pour les données nécessaires à l'utilisations de services
 
 ## Déploiement des serveurs
+Pour pouvoir récupérer les données contenues dans le db.json, il faut déployer le serveur json : `npm run start:db`
+
 
 Afin de lancer le visuel du programme en mode developpement, il faut faire dans un terminal de commande :
  `ng serve -o`, qui ouvre une page web sur l'url : `http://localhost:4200/`.
