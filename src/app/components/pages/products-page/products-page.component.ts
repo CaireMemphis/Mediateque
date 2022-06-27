@@ -14,7 +14,7 @@ export class ProductsPageComponent implements OnInit {
   films: Film[] = [];
   albums: Album[] = [];
 
-
+  editData?: any;
   film:string="Film";
   album:string="Album";
 
@@ -47,4 +47,5 @@ export class ProductsPageComponent implements OnInit {
   onSaveAlbum(album: any) {
     this.serviceAlbum.save(album).subscribe((newAlbum: any) => this.albums.push(newAlbum))
   }
+ 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlbumHttpService } from '../../services/album/album.service';
 import { FilmHttpService } from '../../services/film/film.service';
@@ -10,8 +10,8 @@ import { FilmHttpService } from '../../services/film/film.service';
 })
 export class ProductPageComponent implements OnInit {
   data! : any;
-
-  
+editData?: any;
+update = new EventEmitter()
   typeProduit:string="Film";
 
   constructor(private route:ActivatedRoute,private router:Router,private serviceFilm:FilmHttpService,private serviceAlbum:AlbumHttpService) { }
@@ -41,5 +41,11 @@ export class ProductPageComponent implements OnInit {
     }
 
   }
+ 
+    onUpdate(data: any){
+      alert(JSON.stringify("hello"))
+      this.editData = data;
+      
+      }
 
 }

@@ -1,5 +1,5 @@
 
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-formulaire-film',
@@ -10,19 +10,21 @@ export class FormulaireFilmComponent implements OnInit {
   
 @Output() finish = new EventEmitter;
 
+@Input() default?: any;
+
   form: FormGroup = new FormGroup({})
 
   constructor(private builder: FormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.builder.group({
-      "id":[''],
-      "nom": [''],
-      "real": [''],
-      "synopsis":[''],
-      "annee": [''],
-      "img": [''],
-      "details": ['']
+      
+      "nom": [this.default?.nom || ''],
+      "real": [this.default?.real || ''],
+      "synopsis":[this.default?.synopsis || ''],
+      "annee": [this.default?.annee || ''],
+      "img": [this.default?.img || ''],
+      "details": [this.default?.details || '']
     })
   }
 
