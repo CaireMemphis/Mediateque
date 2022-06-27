@@ -1,9 +1,9 @@
 
 <section class="detail">
-<div id="about">
+  <div id="about">
     <div class="imgs">
-     <img  class="imgs" *ngIf="data.img != ''" src={{data.img}} alt="Table Setting">
-     <img class="imgs" *ngIf="!data.img" mat-card-image src="https://img.freepik.com/vecteurs-libre/astronaute-mignon-flottant-ballon-planete-dans-illustration-icone-vecteur-dessin-anime-espace-concept-icone-science-technologie-isole-vecteur-premium-style-dessin-anime-plat_138676-3850.jpg?t=st=1656013798~exp=1656014398~hmac=e7287bffc21b438e4024cd62b5acbfe8db86a631074842358cf618d9698c4428&w=826" alt="Photo">
+      <img  class="imgs" *ngIf="data.img != ''" src={{data.img}} alt="Table Setting">
+      <img class="imgs" *ngIf="!data.img" mat-card-image src="https://img.freepik.com/vecteurs-libre/astronaute-mignon-flottant-ballon-planete-dans-illustration-icone-vecteur-dessin-anime-espace-concept-icone-science-technologie-isole-vecteur-premium-style-dessin-anime-plat_138676-3850.jpg?t=st=1656013798~exp=1656014398~hmac=e7287bffc21b438e4024cd62b5acbfe8db86a631074842358cf618d9698c4428&w=826" alt="Photo">
 
     </div>
 
@@ -11,9 +11,9 @@
       <h1>{{data.nom}}</h1><br>
       <div class="spacer"></div>
 
-      <h3 *ngIf="!data.artiste" >De {{data.real}} <br> année de sortie  :  {{data.annee}}</h3>
+      <h3 *ngIf="!data.artiste" >De {{data.real}} <br> année de sortie  : {{data.annee}} </h3>
 
-      <h3 *ngIf="!data.real" >{{data.artiste}} {{data.annee}}</h3>
+      <h3 *ngIf="!data.real">{{data.artiste}} <br> année de sortie  : {{data.annee}}</h3>
       <div class="spacer"></div>
       <p  *ngIf="data.synopsis != ''"> {{data.synopsis}} </p>
       <p >{{data.details}} </p>

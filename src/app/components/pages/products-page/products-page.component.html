@@ -2,15 +2,17 @@
 <section class="affich">
 <h2 class="titre">Liste des films</h2>
 
-<app-product-list [products]="films" [type]="film"></app-product-list>
-
+<app-product-list [products]="films" [type]="film" (delete)="onDeleteFilm($event)"></app-product-list>
+<app-formulaire-film (finish)="onSaveFilm($event)"></app-formulaire-film>
+<div class="spacer"></div>
 </section>
 
 <section class="affich">
 <h2 class="titre">Liste des Albums</h2>
 
-<app-product-list [products]="albums" [type]="album"></app-product-list>
-
+<app-product-list [products]="albums" [type]="album" (delete)="onDeleteAlbum($event)"></app-product-list>
+<app-formulaire-album (finish)="onSaveAlbum($event)"></app-formulaire-album>
+<div class="spacer"></div>
 </section>
 
 

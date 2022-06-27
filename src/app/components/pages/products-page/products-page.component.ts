@@ -28,4 +28,23 @@ export class ProductsPageComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+  onDeleteFilm(id: number) {
+    this.serviceFilm.delete(id).subscribe(() => {
+      this.films = this.films.filter(film => film.id !== id)
+    })
+  }
+
+  onDeleteAlbum(id: number) {
+    this.serviceAlbum.delete(id).subscribe(() => {
+      this.albums = this.albums.filter(album => album.id !== id)
+    })
+  }
+
+  onSaveFilm(film: any) {
+    this.serviceFilm.save(film).subscribe((newFilm: any) => this.films.push(newFilm))
+  }
+
+  onSaveAlbum(album: any) {
+    this.serviceAlbum.save(album).subscribe((newAlbum: any) => this.albums.push(newAlbum))
+  }
 }

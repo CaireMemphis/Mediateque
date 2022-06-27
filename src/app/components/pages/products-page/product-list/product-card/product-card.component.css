@@ -1,6 +1,7 @@
 .example-card {
     max-width: 250px;
     height: 550px;
+    margin: 20px;
   }
   mat-card-title{
     padding: 15px;

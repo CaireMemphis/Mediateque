@@ -24,5 +24,6 @@
         </mat-card-content>
         <mat-card-actions>
           <button class="buttonCard" routerLink="/product/{{typeProduct}}/{{produit.id}}" mat-button>DETAILS</button>
+          <button class="buttonCard" mat-button (click)="onDelete()">SUPPRIMER</button>
         </mat-card-actions>
       </mat-card>

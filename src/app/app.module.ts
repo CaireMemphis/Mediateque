@@ -19,6 +19,8 @@ import { ProductCardComponent } from './components/pages/products-page/product-l
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ProductPageComponent } from './components/pages/product-page/product-page.component';
+import { FormulaireFilmComponent } from './components/formulaires/formulaire-film/formulaire-film.component';
+import { FormulaireAlbumComponent } from './components/formulaires/formulaire-album/formulaire-album.component';
 
 
 
@@ -33,7 +35,9 @@ import { ProductPageComponent } from './components/pages/product-page/product-pa
     ProductsPageComponent,
     ProductListComponent,
     ProductCardComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    FormulaireFilmComponent,
+    FormulaireAlbumComponent
    
   ],
   imports: [
